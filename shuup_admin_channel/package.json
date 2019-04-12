@@ -1,0 +1,21 @@
+{
+  "name": "shuup-admin-channel",
+  "version": "1.0.0",
+  "description": "Shuup Admin Channel",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch"
+  },
+  "author": "Christian Hess <chrtistianhess.rlz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "event-emitter": "^0.3.5",
+    "parcel-bundler": "^1.12.3",
+    "shuup-static-build-tools": "^1.0.3"
+  },
+  "browserlist": ">1%,last 10 versions",
+  "shuup": {
+    "static_build": true
+  }
+}
