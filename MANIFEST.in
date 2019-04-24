@@ -1,0 +1,5 @@
+include README.md
+
+recursive-include shuup_admin_channel/locale *.mo
+recursive-include shuup_admin_channel/templates *.jinja *.txt
+recursive-include shuup_admin_channel/static *.js *.css
