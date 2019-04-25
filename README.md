@@ -120,9 +120,19 @@ Each user is connected to a consumer and all them will receive this same message
 
 For examples of handlers and consumers, check [`handlers.py`](./shuup_admin_channel/handlers.py).
 
+### Room names
+
+Admin Channel adds each user (consumer) to 3 rooms:
+
+- A shop room, which contains all staff users from that shop.
+- A global room, which contains all staff users from all shops.
+- A user room, which contains only that specific user.
+
+When sending messages to consumers you can select one of those rooms to reach the desired user group.
+
 ## Settings
 
-- `SHUUP_ADMIN_CHANNEL_ORDER_RECEIVED_ENABLED`  Enable/disable the new order received notification
+- `SHUUP_ADMIN_CHANNEL_ORDER_RECEIVED_ENABLED` - Enable/disable the new order received notification
 - `SHUUP_ADMIN_CHANNEL_LAYER` - The name of the channel layer to use while sending messages
 - `SHUUP_ADMIN_CHANNEL_SETTINGS_PROVIDER` - The object that will provide configuration to the admin channel.
 
