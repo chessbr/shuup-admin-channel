@@ -13,3 +13,6 @@ SHUUP_ADMIN_CHANNEL_LAYER = None
 #: Indicates whether the order received handler is enabled in JavaScript
 #: It is enabled by default and
 SHUUP_ADMIN_CHANNEL_ORDER_RECEIVED_ENABLED = True
+
+#: Indicates the object that will provide settings to the Admin Channel websocket
+SHUUP_ADMIN_CHANNEL_SETTINGS_PROVIDER = "shuup_admin_channel.resources:DefaultSettingsProvider"

@@ -8,7 +8,6 @@
 from channels import DEFAULT_CHANNEL_LAYER
 from django.conf import settings
 from shuup.core.order_creator.signals import order_creator_finished
-
 from shuup_admin_channel.utils import get_room_name_for_shop
 
 

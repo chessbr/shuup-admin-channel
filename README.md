@@ -126,18 +126,13 @@ For examples of handlers and consumers, check [`handlers.py`](./shuup_admin_chan
 
 - `SHUUP_ADMIN_CHANNEL_ORDER_RECEIVED_ENABLED`  Enable/disable the new order received notification
 - `SHUUP_ADMIN_CHANNEL_LAYER` - The name of the channel layer to use while sending messages
+- `SHUUP_ADMIN_CHANNEL_SETTINGS_PROVIDER` - The object that will provide configuration to the admin channel.
 
 ## Features
 
 - Add notifications to warn users about new orders received
 - Add websocket command to dispatch a notification to all logged staff users through JavaScript
 - Add a way of exentending the channel
-
-## Known issues and project next steps
-
-On this first version, each page load will make the websocket to connect, as you might expect. This can be bad because it will connect on any View request. So my idea is to pre-select or give an option to limit whether the View should connect to the Admin channel or not. For example, you could limit only the Orders List view to connect to the channel.
-
-Unfortunately Shuup Admin is not a SPA which will require a new request every time you navigate, but I believe this will already add a great feature to the current state of art!
 
 # Copyright
 

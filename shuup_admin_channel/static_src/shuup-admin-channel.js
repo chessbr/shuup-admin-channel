@@ -12,7 +12,7 @@ import EventEmitter from "event-emitter";
 const ShuupAdminChannel = {
     socket: null,
     events: EventEmitter(),
-    init() {
+    connect() {
         const that = this;
         const channelEndpoint = window.ShuupAdminConfig.settings.adminChannelUrl;
         if (channelEndpoint) {
@@ -33,7 +33,9 @@ const ShuupAdminChannel = {
         this.events.emit("received", payload);
     }
 };
-ShuupAdminChannel.init();
+if (window.ShuupAdminChannelConfig.connectOnLoad) {
+    ShuupAdminChannel.connect();
+}
 // expose to the world
 window.ShuupAdminChannel = ShuupAdminChannel;
 

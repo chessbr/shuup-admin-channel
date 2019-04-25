@@ -11,7 +11,6 @@ import types
 from channels.generic.websocket import AsyncWebsocketConsumer
 from shuup.apps.provides import get_provide_objects
 from shuup.core.models import Shop
-
 from shuup_admin_channel.utils import (
     get_global_room_name, get_room_name_for_shop, get_room_name_for_user
 )
