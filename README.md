@@ -1,7 +1,5 @@
 # Shuup Admin Channel
 
-:warning ALPHA VERSION
-
 Adds a generic and extendable channel to Admin module using [Shuup Channels](https://github.com/chessbr/shuup-channels).
 
 This adds an optional consumer that will warn logged staff users when a new order is created through a notification, without the need of a page reload.
